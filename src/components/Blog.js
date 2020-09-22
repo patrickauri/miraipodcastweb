@@ -29,7 +29,7 @@ const BlogPost = ({ data }) => {
 					<div className='iframe-container'>
 						<iframe
 							className='youtube-embed'
-							src={data.embed}
+							src={e}
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 							allowfullscreen
 						/>
