@@ -1,13 +1,198 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgb(231, 231, 231);
+	height: 100%;
+	font-size: 1.1em;
+	color: rgb(50, 50, 50);
+}
+
+p {
+	font-size: 1.1em;
+}
+
+#root {
+	height: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+	background-color: white;
+	min-height: 90%;
+	position: relative;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.3);
+}
+
+.jumbo-text {
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+	margin: auto;
+}
+
+.content {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+
+.content-jumbo {
+	background-image: url('./img/BG02.png');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 20em;
+	display: flex;
+}
+
+.paragraph {
+	padding: 1em;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	background-color: rgb(50, 50, 50);
+	height: 6em;
+	display: flex;
+}
+
+.logo {
+	margin: auto;
+	margin-left: 4em;
+	max-width: 14em;
+}
+
+.nav-list {
+	margin: auto;
+	margin-right: 4em;
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.nav-item {
+	margin: 0.5em;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
+
+.nav-item:hover {
+	color: rgb(215, 215, 215);
+}
+
+.person-box {
+	display: flex;
+	margin: auto;
+}
+
+.portrait {
+	max-width: 14em;
+	max-height: 14em;
+	border-radius: 50%;
+}
+
+.info-tags {
+	font-style: italic;
+	color: rgb(102, 102, 102);
+	font-size: 1em;
+}
+
+.info-box {
+	margin-left: 8em;
+}
+
+.p-center {
+	text-align: center;
+}
+
+.btn {
+	margin: 1em;
+	padding: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1.1em;
+	border-style: none;
+	background: linear-gradient(90deg, rgba(166, 54, 128, 1) 0%, rgba(210, 78, 40, 1) 100%);
+	border-radius: 2em;
+	color: white;
+}
+
+.btn:hover {
+	opacity: 85%;
+	cursor: pointer;
+}
+
+.fa {
+	padding: 1em;
+	font-size: 1.5em;
+}
+
+.fa:hover {
+	opacity: 0.75;
+}
+
+.fa-facebook {
+	color: rgb(19, 60, 121) !important;
+}
+
+.fa-youtube {
+	color: rgb(214, 39, 39) !important;
+}
+
+.fa-twitter {
+	color: rgb(50, 112, 182) !important;
+}
+
+.footer-space {
+	height: 10em;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:after {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1280px) {
+	.container {
+		width: 100%;
+	}
+	.header {
+		flex-direction: column;
+		height: auto;
+	}
+	.logo,
+	.nav-list {
+		margin: auto;
+	}
+	.person-box {
+		display: flex;
+		flex-direction: column;
+	}
+	.portrait {
+		margin: auto;
+	}
+	.info-box {
+		margin: 0;
+	}
+	.paragraph {
+		width: auto;
+	}
 }
