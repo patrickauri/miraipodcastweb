@@ -5,6 +5,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
+import Blog from './components/Blog';
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<div className='container'>
 				<Header />
 				<Switch>
+					<Route path='/blog/:id' component={Blog} />
 					<Route path='/om'>
 						<About />
 					</Route>

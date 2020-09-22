@@ -5,7 +5,9 @@ import Logo from '../img/MiraiLogo_Blue.png';
 const Header = () => {
 	return (
 		<div className='header'>
-			<img src={Logo} className='logo' />
+			<Link to='/' className='logo'>
+				<img src={Logo} className='logo-img' />
+			</Link>
 			<ul className='nav-list'>
 				<Link to='/'>
 					<li className='nav-item'>Hjem</li>

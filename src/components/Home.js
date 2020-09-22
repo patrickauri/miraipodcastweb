@@ -1,11 +1,12 @@
 import React from 'react';
+import { BlogPreview } from './Blog';
 
 const Home = () => {
 	return (
 		<div className='content'>
 			<div className='content-jumbo' />
 			<div className='paragraph'>
-				<p>Blog</p>
+				<BlogPreview />
 			</div>
 		</div>
 	);
