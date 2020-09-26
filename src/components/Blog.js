@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import data from './Posts.json';
+import { YouTube } from './Embed';
 
 const PostPreview = ({ data }) => {
 	return (
@@ -25,15 +26,8 @@ const BlogPost = ({ data }) => {
 				<h1 className='post-title'>
 					<Link to={`/blog/${data.id}`}>{data.title}</Link>
 				</h1>
-				{data.embed.map((e) => (
-					<div className='iframe-container'>
-						<iframe
-							className='youtube-embed'
-							src={e}
-							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-							allowfullscreen
-						/>
-					</div>
+				{data.embed.map((e, i) => (
+					<YouTube url={e} key={i} />
 				))}
 				<p>{data.content} </p>
 			</div>
