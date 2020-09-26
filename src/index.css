@@ -80,8 +80,19 @@ code {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 20em;
+	min-height: 20em;
 	display: flex;
+}
+
+.embed-home {
+	margin-top: 10vh;
+	margin-left: 10vh;
+	margin-right: 10vh;
+	margin-bottom: -10vh;
+}
+
+.p-home {
+	margin-top: 10vh;
 }
 
 .paragraph {
@@ -198,6 +209,11 @@ code {
 	color: crimson;
 }
 
+.embed-margin {
+	position: relative;
+	height: 10vh;
+}
+
 a,
 a:hover,
 a:focus,
@@ -207,7 +223,7 @@ a:after {
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 768px) {
 	.container {
 		width: 100%;
 	}
@@ -231,5 +247,14 @@ a:after {
 	}
 	.paragraph {
 		width: auto;
+	}
+	.embed-home {
+		margin-top: 2vh;
+		margin-bottom: -2vh;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.p-home {
+		margin-top: 2vh;
 	}
 }

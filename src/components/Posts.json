@@ -1,6 +1,12 @@
 {
 	"posts": [
 		{
+			"id": "2020092601",
+			"title": "Episode #04 – Videospill",
+			"embed": ["https://www.youtube.com/embed/VFP0a4yyqaQ"],
+			"content": "Sony og Microsoft har problemer med å selge nye konsoller, Tesla planleger billigere biler, og kunstig intelligens kan nå lage kunst!"
+		},
+		{
 			"id": "2020092201",
 			"title": "Episode #03 – Spillavhengighet",
 			"embed": ["https://www.youtube.com/embed/wh7Sgc8MpRs"],

@@ -55,8 +55,38 @@ const Blog = (props) => {
 	}
 };
 
-export const BlogPreview = (props) => {
-	return data.posts.sort().map((e, i) => <PostPreview key={i} data={e} />);
+export const BlogFull = () => {
+	const Newest = () => {
+		return data.posts.map((e, i) => <PostPreview key={i} data={e} />);
+	};
+
+	return (
+		<React.Fragment>
+			<div className='content-jumbo'>
+				<p className='jumbo-text'>Episodeliste</p>
+			</div>
+			<div className='paragraph p-home'>
+				<Newest />
+			</div>
+		</React.Fragment>
+	);
+};
+
+export const BlogPreview = ({ limit }) => {
+	const Newest = () => {
+		return data.posts.slice(0, 3).map((e, i) => <PostPreview key={i} data={e} />);
+	};
+
+	return (
+		<React.Fragment>
+			<Newest />
+			<div className='paragraph' style={{ textAlign: 'center' }}>
+				<Link to='/blog/'>
+					<h3 className='post-title'>Se alle episoder</h3>
+				</Link>
+			</div>
+		</React.Fragment>
+	);
 };
 
 export default Blog;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const YouTube = ({ url }) => {
+const YouTube = ({ url, style }) => {
 	return (
-		<div className='iframe-container'>
+		<div className={'iframe-container ' + style}>
 			<iframe
 				className='youtube-embed'
 				src={url}
